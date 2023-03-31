@@ -29,4 +29,8 @@ set number
 set tabstop=4
 set expandtab
 set shiftwidth=4
-
+set foldcolumn=auto:2
+set foldenable
+set foldlevel=6
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
