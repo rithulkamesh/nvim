@@ -17,6 +17,7 @@ return require("packer").startup(function(use)
 
 
   -- IDE features
+
   --- Code Helpers
   use "mhartington/formatter.nvim"
   use "windwp/nvim-autopairs"
@@ -52,6 +53,7 @@ return require("packer").startup(function(use)
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   -- Misc
+  use "akinsho/toggleterm.nvim"
   use {
     "nvim-neorg/neorg",
     requires = {
