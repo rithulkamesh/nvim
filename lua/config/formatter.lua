@@ -1,10 +1,5 @@
 local util = require "formatter.util"
 
-local keymap = vim.api.nvim_set_keymap
-
-keymap("n", "<leader>f" ,":Format<CR>", {silent=true})
-
-
 require("formatter").setup {
   logging = true,
   log_level = vim.log.levels.WARN,

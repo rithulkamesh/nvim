@@ -14,7 +14,7 @@ return require("packer").startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'catppuccin/nvim'
   use 'nvim-tree/nvim-web-devicons'
-
+  use 'matbme/JABS.nvim'
 
   -- IDE features
 
@@ -33,6 +33,7 @@ return require("packer").startup(function(use)
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
   use 'saadparwaiz1/cmp_luasnip'
   use 'https://github.com/petertriho/cmp-git/'
   use 'L3MON4D3/LuaSnip'
@@ -49,12 +50,13 @@ return require("packer").startup(function(use)
   use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
-  use 'kyazdani42/nvim-web-devicons'
 
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   -- Misc
-  use "akinsho/toggleterm.nvim"
+  use {"akinsho/toggleterm.nvim", config = function()
+      require("toggleterm").setup()
+    end}
   use {
     "nvim-neorg/neorg",
     requires = {

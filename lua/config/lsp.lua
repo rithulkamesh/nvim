@@ -1,6 +1,6 @@
 local lspconfig = require("lspconfig")
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
-local servers = { "ccls", "rust_analyzer", "pyright", "lua_ls" }
+local servers = { "ccls", "rust_analyzer", "pyright", "lua_ls"}
 
 -- Automatic bracket pairing
 
@@ -30,6 +30,12 @@ for _, lsp in ipairs(servers) do
 		capabilities = capabilities,
 	}
 end
+
+lspconfig.tsserver.setup {
+  on_attach = on_attach,
+  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+  cmd = { "typescript-language-server", "--stdio" }
+} 
 
 --- Mason and Trouble
 require("mason").setup()
@@ -86,7 +92,8 @@ cmp.setup {
 		{ name = 'nvim_lsp' },
 		{ name = 'luasnip' },
 		{ name = "neorg" },
-    { name = 'git'}
+        { name = 'buffer' },
+        { name = 'git'}
 	},
 }
 

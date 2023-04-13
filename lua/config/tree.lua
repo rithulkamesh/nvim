@@ -5,10 +5,6 @@ vim.g.loaded_netrwPlugin = 1
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 
-local keymap = vim.api.nvim_set_keymap
-
-keymap("n", "<leader>e" ,":NvimTreeToggle<CR>", {silent=true})
-
 -- nvim-tree is also there in modified buffers so this function filter it out
 local modifiedBufs = function(bufs)
     local t = 0
