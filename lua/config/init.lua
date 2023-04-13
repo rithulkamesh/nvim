@@ -10,4 +10,4 @@ require("config.telescope")
 require("config.formatter")
 require("config.neorg")
 require("config.auto")
-
+require("config.jabs")

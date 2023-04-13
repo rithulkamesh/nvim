@@ -21,6 +21,7 @@ All references to `<leader>` should be inferred as `\`.
 |Format the current working file|`<leader>f`|
 |Toggle a floating terminal|`<leader>tf`|
 |Open the File tree|`<leader>e`|
+|Open buffer list|`<leader>b`|
 
 ## Credits
 
