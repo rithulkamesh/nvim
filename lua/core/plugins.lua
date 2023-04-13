@@ -22,6 +22,7 @@ return require("packer").startup(function(use)
   use "mhartington/formatter.nvim"
   use "windwp/nvim-autopairs"
   use 'nvim-treesitter/nvim-treesitter'
+  use 'windwp/nvim-ts-autotag'
 
   --- LSP tools
   use "williamboman/mason.nvim"
