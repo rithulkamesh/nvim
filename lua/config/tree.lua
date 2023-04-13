@@ -4,7 +4,8 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 local function open_nvim_tree(data)
-  if not vim.fn.isdirectory(data.file) == 1 then
+  local directory =  vim.fn.isdirectory(data.file) == 1
+  if not directory then
     return
   end
   vim.cmd.cd(data.file)
