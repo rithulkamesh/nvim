@@ -11,6 +11,16 @@ Fast, Minimal and pretty neovim config.
 
 Clone into `~/.config`
 
+## Custom Keybinds
+
+The leader is set to `\` in the config.<br />
+All references to `<leader>` should be inferred as `\`.
+
+|Function|Keybind|
+|---|---|
+|Format the current working file|`<leader>f`|
+|Toggle a floating terminal|`<leader>tf`|
+
 ## Credits
 
 - [AlphabetsAlphabets's config](https://github.com/AlphabetsAlphabets/nvim)
