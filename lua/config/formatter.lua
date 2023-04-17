@@ -14,6 +14,7 @@ require("formatter").setup {
         require("formatter.filetypes.rust").rustfmt
     },
     typescript = {require("formatter.filetypes.typescript").prettier},
+    javascript = {require("formatter.filetypes.javascript").pretteir},
     typescriptreact = {require("formatter.filetypes.typescriptreact").prettier},
     python = {require("formatter.filetypes.python").autopep8},
     ["*"] = {
