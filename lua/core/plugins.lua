@@ -65,5 +65,9 @@ return require("packer").startup(function(use)
   }
   use 'https://github.com/nvim-neorg/neorg-telescope'
   use 'nvim-lualine/lualine.nvim'
+  use {
+  "folke/todo-comments.nvim",
+  requires = "nvim-lua/plenary.nvim",
+}
 
 end)
