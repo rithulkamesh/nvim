@@ -9,7 +9,7 @@ parser_configs.norg = {
 }
 
 require("nvim-treesitter.configs").setup {
-  ensure_installed = { "c", "lua", "python", "vim", "help", "rust", "typescript", "astro", "norg" },
+  ensure_installed = { "c", "lua", "python", "vim", "rust", "typescript", "astro", "norg" },
 
   sync_install = false,
   auto_install = true,
