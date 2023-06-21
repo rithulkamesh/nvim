@@ -13,6 +13,10 @@ require("formatter").setup {
     rust = {
         require("formatter.filetypes.rust").rustfmt
     },
+    go = {
+        require("formatter.filetypes.go").gofmt,
+        require("formatter.filetypes.go").goimports
+    },
     typescript = {require("formatter.filetypes.typescript").prettier},
     javascript = {require("formatter.filetypes.javascript").pretteir},
     typescriptreact = {require("formatter.filetypes.typescriptreact").prettier},
@@ -22,3 +26,4 @@ require("formatter").setup {
     }
   }
 }
+
