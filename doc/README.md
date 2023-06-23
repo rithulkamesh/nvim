@@ -2,11 +2,11 @@
 
 
 ## ⚒ Requirements
-    - [Nerd Fonts](https://www.nerdfonts.com/font-downloads) - I personally like Hack Nerd Font 
-    - Terminal with true color support (for the default theme, otherwise it is dependent on the theme you are using)
-    - A clipboard tool is necessary for the integration with the system clipboard 
-    - [Packer.nvim](https://github.com/wbthomason/packer.nvim#quickstart)
-    - Brew GCC on apple devices
+- [Nerd Fonts](https://www.nerdfonts.com/font-downloads) - I personally like Hack Nerd Font 
+- Terminal with true color support (for the default theme, otherwise it is dependent on the theme you are using)
+- A clipboard tool is necessary for the integration with the system clipboard 
+- [Packer.nvim](https://github.com/wbthomason/packer.nvim#quickstart)
+- Brew GCC on apple devices
 
 Brew GCC should override apple gcc in macbooks. Easiest method I found is to prioritize `/usr/local/bin` over `/usr/bin` in the PATH variable and Symlinking `/opt/homebrew/bin/gcc-13` as gcc in that path.
 
