@@ -13,6 +13,9 @@ require("formatter").setup {
     rust = {
         require("formatter.filetypes.rust").rustfmt
     },
+    cpp = {
+        require("formatter.filetypes.cpp").clangformat
+    },
     go = {
         require("formatter.filetypes.go").gofmt,
         require("formatter.filetypes.go").goimports

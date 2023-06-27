@@ -6,7 +6,6 @@ require("config.lsp")
 require("config.treesitter")
 
 require("config.tree")
-require("config.neorg")
 require("config.telescope")
 require("config.formatter")
 require("config.auto")
