@@ -1,9 +1,8 @@
 local lspconfig = require("lspconfig")
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
-local servers = { "ccls", "rust_analyzer", "pyright", "lua_ls"}
+local servers = { "clangd", "rust_analyzer", "pyright", "lua_ls"}
 
 -- Automatic bracket pairing
-
 require("nvim-autopairs").setup {}
 
 -- LSP settings (for overriding per client)

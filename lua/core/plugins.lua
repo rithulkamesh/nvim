@@ -56,13 +56,6 @@ return require("packer").startup(function(use)
   use {"akinsho/toggleterm.nvim", config = function()
       require("toggleterm").setup()
     end}
-  use {
-    "nvim-neorg/neorg",
-    requires = {
-      "nvim-lua/plenary.nvim",
-    }
-  }
-  use 'https://github.com/nvim-neorg/neorg-telescope'
   use 'nvim-lualine/lualine.nvim'
   use {
   "folke/todo-comments.nvim",
