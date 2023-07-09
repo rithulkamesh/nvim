@@ -34,3 +34,12 @@ set foldenable
 set foldlevel=6
 set foldmethod=expr
 set foldexpr=nvim_treesitter#foldexpr()
+
+" -----------------------------------------------------------------------------
+"     - Automatic Formatting -
+" -----------------------------------------------------------------------------
+
+augroup FormatAutogroup
+  autocmd!
+  autocmd BufWritePost * FormatWrite
+augroup END
