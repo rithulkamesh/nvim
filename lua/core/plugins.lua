@@ -15,6 +15,7 @@ return require("packer").startup(function(use)
   use 'catppuccin/nvim'
   use 'nvim-tree/nvim-web-devicons'
   use 'matbme/JABS.nvim'
+  use 'pantharshit00/vim-prisma'
 
   -- IDE features
 

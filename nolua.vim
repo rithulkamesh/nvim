@@ -13,6 +13,7 @@ noremap <Right> <Nop>
 :command! W w
 :command! Q q
 :command! Wq wq
+:command! Qa qa
 
 " -----------------------------------------------------------------------------
 "     - Leader -
@@ -34,6 +35,8 @@ set foldenable
 set foldlevel=6
 set foldmethod=expr
 set foldexpr=nvim_treesitter#foldexpr()
+
+nnoremap <esc> :noh<CR><esc>
 
 " -----------------------------------------------------------------------------
 "     - Automatic Formatting -
