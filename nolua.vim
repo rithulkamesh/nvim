@@ -46,3 +46,10 @@ augroup FormatAutogroup
   autocmd!
   autocmd BufWritePost * FormatWrite
 augroup END
+
+" -----------------------------------------------------------------------------
+"     - Markdown Preview -
+" -----------------------------------------------------------------------------
+let g:mkdp_auto_start = 1
+let g:mkdp_auto_close = 1
+
