@@ -7,4 +7,4 @@
 
 Fast, Minimal and pretty neovim config.
 
-Refer to [Docs](https://github.com/rithulkamesh/nvim/blob/main/doc/README.md)
+Refer to [Docs](https://github.com/rithulkamesh/nvim/blob/main/doc/README.md) for more info.
