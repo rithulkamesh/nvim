@@ -26,7 +26,7 @@ let g:mapleader="\\"
 filetype plugin indent on
 syntax on
 colorscheme gruvbox
-set clipboard=unnamed
+set clipboard+=unnamedplus
 set number
 set tabstop=4
 set expandtab
