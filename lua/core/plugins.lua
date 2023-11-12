@@ -1,7 +1,7 @@
 return require("lazy").setup({
-	{ "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...},
+	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
 	"nvim-tree/nvim-web-devicons",
-	"matbme/JABS.nvim",
+
 	--- Code Helpers
 	"mhartington/formatter.nvim",
 	"windwp/nvim-autopairs",
