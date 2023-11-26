@@ -40,6 +40,15 @@ set foldexpr=nvim_treesitter#foldexpr()
 nnoremap <esc> :noh<CR><esc>
 
 " -----------------------------------------------------------------------------
+"     - Make Background Transparent -
+" -----------------------------------------------------------------------------
+
+highlight Normal guibg=none
+highlight NonText guibg=none
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
+
+" -----------------------------------------------------------------------------
 "     - Automatic Formatting -
 " -----------------------------------------------------------------------------
 

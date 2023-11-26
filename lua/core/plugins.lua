@@ -6,6 +6,7 @@ return require("lazy").setup({
 	"mhartington/formatter.nvim",
 	"windwp/nvim-autopairs",
 	"nvim-treesitter/nvim-treesitter",
+	"github/copilot.vim",
 
 	--- LSP tools
 	"williamboman/mason.nvim",
@@ -36,4 +37,27 @@ return require("lazy").setup({
 
 	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	"nvim-lualine/lualine.nvim",
+
+	--- Note Taking
+	{
+		"nvim-neorg/neorg",
+		build = ":Neorg sync-parsers",
+		dependencies = { "nvim-lua/plenary.nvim" },
+		config = function()
+			require("neorg").setup({
+				load = {
+					["core.defaults"] = {},
+					["core.concealer"] = {},
+					["core.dirman"] = {
+						config = {
+							workspaces = {
+								notes = "~/notes",
+                                uni = "~/edu"
+							},
+						},
+					},
+				},
+			})
+		end,
+	},
 })
