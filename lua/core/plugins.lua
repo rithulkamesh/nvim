@@ -1,5 +1,5 @@
 return require("lazy").setup({
-	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
+	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 	"nvim-tree/nvim-web-devicons",
 
 	--- Code Helpers
@@ -52,7 +52,7 @@ return require("lazy").setup({
 						config = {
 							workspaces = {
 								notes = "~/notes",
-                                uni = "~/edu"
+								uni = "~/edu",
 							},
 						},
 					},
