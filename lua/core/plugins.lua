@@ -1,5 +1,5 @@
 return require("lazy").setup({
-	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
 	"nvim-tree/nvim-web-devicons",
 
 	--- Code Helpers
@@ -37,27 +37,4 @@ return require("lazy").setup({
 
 	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	"nvim-lualine/lualine.nvim",
-
-	--- Note Taking
-	{
-		"nvim-neorg/neorg",
-		build = ":Neorg sync-parsers",
-		dependencies = { "nvim-lua/plenary.nvim" },
-		config = function()
-			require("neorg").setup({
-				load = {
-					["core.defaults"] = {},
-					["core.concealer"] = {},
-					["core.dirman"] = {
-						config = {
-							workspaces = {
-								notes = "~/notes",
-								uni = "~/edu",
-							},
-						},
-					},
-				},
-			})
-		end,
-	},
 })

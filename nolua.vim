@@ -25,7 +25,7 @@ let g:mapleader="\\"
 " -----------------------------------------------------------------------------
 filetype plugin indent on
 syntax on
-colorscheme catppuccin-mocha
+colorscheme gruvbox
 set clipboard+=unnamedplus
 set number
 set tabstop=4
