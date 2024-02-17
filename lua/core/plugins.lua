@@ -1,5 +1,10 @@
 return require("lazy").setup({
-	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = ... },
+	{
+		"2nthony/vitesse.nvim",
+		dependencies = {
+			"tjdevries/colorbuddy.nvim",
+		},
+	},
 	"nvim-tree/nvim-web-devicons",
 
 	--- Code Helpers

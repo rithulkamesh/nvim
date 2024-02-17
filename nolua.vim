@@ -25,7 +25,7 @@ let g:mapleader="\\"
 " -----------------------------------------------------------------------------
 filetype plugin indent on
 syntax on
-colorscheme gruvbox
+colorscheme vitesse
 set clipboard+=unnamedplus
 set number
 set tabstop=4
@@ -62,4 +62,3 @@ augroup END
 " -----------------------------------------------------------------------------
 let g:mkdp_auto_start = 1
 let g:mkdp_auto_close = 1
-

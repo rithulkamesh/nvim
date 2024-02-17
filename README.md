@@ -1,5 +1,3 @@
-This repository is no longer maintained, please read [this](https://open.substack.com/pub/rithul/p/im-going-back-to-vscode?r=1zd6mo&utm_campaign=post&utm_medium=web)
-
 ![image](./nvim_conf.png)
 
 ## nvim
