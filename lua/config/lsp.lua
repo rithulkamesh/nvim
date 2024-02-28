@@ -42,7 +42,6 @@ require("mason-lspconfig").setup({
 		"lua_ls",
 		"rust_analyzer",
 		"pyright",
-		"typescript-language-server",
 	},
 })
 

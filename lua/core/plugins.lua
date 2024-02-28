@@ -1,4 +1,5 @@
 return require("lazy").setup({
+	-- Misc
 	"nvim-tree/nvim-web-devicons",
 	"rebelot/kanagawa.nvim",
 	"tpope/vim-fugitive",
