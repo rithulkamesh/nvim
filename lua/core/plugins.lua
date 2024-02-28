@@ -1,11 +1,7 @@
 return require("lazy").setup({
-	{
-		"2nthony/vitesse.nvim",
-		dependencies = {
-			"tjdevries/colorbuddy.nvim",
-		},
-	},
 	"nvim-tree/nvim-web-devicons",
+	"rebelot/kanagawa.nvim",
+	"tpope/vim-fugitive",
 
 	--- Code Helpers
 	"mhartington/formatter.nvim",
@@ -42,4 +38,25 @@ return require("lazy").setup({
 
 	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	"nvim-lualine/lualine.nvim",
+	{
+		"nvim-neorg/neorg",
+		build = ":Neorg sync-parsers",
+		lazy = false,
+		dependencies = { "nvim-lua/plenary.nvim" },
+		config = function()
+			require("neorg").setup({
+				load = {
+					["core.defaults"] = {},
+					["core.concealer"] = {},
+					["core.dirman"] = {
+						config = {
+							workspaces = {
+								notes = "~/notes",
+							},
+						},
+					},
+				},
+			})
+		end,
+	},
 })
