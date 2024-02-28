@@ -25,6 +25,8 @@ require("nvim-treesitter.configs").setup({
 	ignore_install = { "javascript" },
 	autotag = {
 		enable = true,
+		enable_close = true,
+		enable_close_on_slash = true,
 	},
 	highlight = {
 		enable = true,
