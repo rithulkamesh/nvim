@@ -23,10 +23,11 @@ require("nvim-treesitter.configs").setup({
 	sync_install = false,
 	auto_install = true,
 	ignore_install = { "javascript" },
+	autotag = {
+		enable = true,
+	},
 	highlight = {
 		enable = true,
-
-		disable = {},
 		disable = function(lang, buf)
 			local max_filesize = 100 * 1024 -- 100 KB
 			local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))

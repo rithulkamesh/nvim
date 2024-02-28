@@ -8,6 +8,7 @@ return require("lazy").setup({
 	"mhartington/formatter.nvim",
 	"windwp/nvim-autopairs",
 	"nvim-treesitter/nvim-treesitter",
+	"windwp/nvim-ts-autotag",
 	"github/copilot.vim",
 
 	--- LSP tools
