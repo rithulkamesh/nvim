@@ -42,6 +42,7 @@ nnoremap <esc> :noh<CR><esc>
 "     - Make Background Transparent -
 " -----------------------------------------------------------------------------
 
+colorscheme gruvbox
 highlight Normal guibg=none
 highlight NonText guibg=none
 highlight Normal ctermbg=none

@@ -1,5 +1,4 @@
 -- Module Oriented Configuration
-require("config.theme")
 require("config.lualine")
 
 require("config.lsp")

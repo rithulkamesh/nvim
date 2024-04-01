@@ -1,7 +1,7 @@
 return require("lazy").setup({
+	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true },
 	-- Misc
 	"nvim-tree/nvim-web-devicons",
-	"rebelot/kanagawa.nvim",
 	"tpope/vim-fugitive",
 
 	--- Code Helpers
