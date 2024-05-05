@@ -1,8 +1,56 @@
 return require("lazy").setup({
-	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true },
+
+	{
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+	},
+
 	-- Misc
 	"nvim-tree/nvim-web-devicons",
 	"tpope/vim-fugitive",
+	{
+		"stevearc/dressing.nvim",
+		opts = {},
+	},
+	{
+		"goolord/alpha-nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		config = function()
+			require("alpha").setup(require("alpha.themes.dashboard").config)
+		end,
+	},
+	"christoomey/vim-tmux-navigator",
+	{
+		"lukas-reineke/indent-blankline.nvim",
+		event = { "BufReadPre", "BufNewFile" },
+		main = "ibl",
+		opts = {
+			indent = { char = "┊" },
+		},
+	},
+	{
+		"folke/todo-comments.nvim",
+		event = { "BufReadPre", "BufNewFile" },
+		dependencies = { "nvim-lua/plenary.nvim" },
+		config = function()
+			local todo_comments = require("todo-comments")
+
+			-- set keymaps
+			local keymap = vim.keymap -- for conciseness
+
+			keymap.set("n", "]t", function()
+				todo_comments.jump_next()
+			end, { desc = "Next todo comment" })
+
+			keymap.set("n", "[t", function()
+				todo_comments.jump_prev()
+			end, { desc = "Previous todo comment" })
+
+			todo_comments.setup()
+		end,
+	},
 
 	--- Code Helpers
 	"mhartington/formatter.nvim",
@@ -40,25 +88,9 @@ return require("lazy").setup({
 
 	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	"nvim-lualine/lualine.nvim",
-	{
-		"nvim-neorg/neorg",
-		build = ":Neorg sync-parsers",
-		lazy = false,
-		dependencies = { "nvim-lua/plenary.nvim" },
-		config = function()
-			require("neorg").setup({
-				load = {
-					["core.defaults"] = {},
-					["core.concealer"] = {},
-					["core.dirman"] = {
-						config = {
-							workspaces = {
-								notes = "~/notes",
-							},
-						},
-					},
-				},
-			})
-		end,
-	},
-})
+}, { checker = {
+	enabled = true,
+	notify = false,
+}, change_detection = {
+	notify = false,
+} })
