@@ -87,6 +87,28 @@ return require("lazy").setup({
 
 	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	"nvim-lualine/lualine.nvim",
+
+	--[[
+
+    Removed due to complicated LaTeX issues
+
+	--- Notes
+	{
+		"vhyrro/luarocks.nvim",
+		priority = 1000, -- We'd like this plugin to load first out of the rest
+		config = true, -- This automatically runs `require("luarocks-nvim").setup()`
+	},
+	{
+		"nvim-neorg/neorg",
+		dependencies = { "luarocks.nvim" },
+	},
+	-- image support in notes
+	{
+		"3rd/image.nvim",
+		dependencies = { "luarocks.nvim" },
+	},
+    ]]
+	--
 }, { checker = {
 	enabled = true,
 	notify = false,

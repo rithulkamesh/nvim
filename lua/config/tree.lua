@@ -34,10 +34,6 @@ vim.api.nvim_create_autocmd("QuitPre", {
 })
 
 require("nvim-tree").setup({
-	view = {
-		width = 35,
-		relativenumber = true,
-	},
 	-- change folder arrow icons
 	renderer = {
 		indent_markers = {
