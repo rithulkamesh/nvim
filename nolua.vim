@@ -36,28 +36,8 @@ set foldlevel=6
 set foldmethod=expr
 set foldexpr=nvim_treesitter#foldexpr()
 
-nnoremap <esc> :noh<CR><esc>
+" -----------------------------------------------------------------------------
+"     - Quality of Life -
+" ----------------------------------------------------------------------------- 
+nnoremap <esc> :noh<CR><esc> " Remove all highlights when I press escape
 
-" -----------------------------------------------------------------------------
-"     - Make Background Transparent -
-" -----------------------------------------------------------------------------
-
-highlight Normal guibg=none
-highlight NonText guibg=none
-highlight Normal ctermbg=none
-highlight NonText ctermbg=none
-
-" -----------------------------------------------------------------------------
-"     - Automatic Formatting -
-" -----------------------------------------------------------------------------
-
-augroup FormatAutogroup
-  autocmd!
-  autocmd BufWritePost * FormatWrite
-augroup END
-
-" -----------------------------------------------------------------------------
-"     - Markdown Preview -
-" -----------------------------------------------------------------------------
-let g:mkdp_auto_start = 1
-let g:mkdp_auto_close = 1
