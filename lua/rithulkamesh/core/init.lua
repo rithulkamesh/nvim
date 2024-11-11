@@ -38,6 +38,7 @@ vim.opt.foldenable = true
 vim.opt.foldlevel = 6
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.g.zig_fmt_autosave = 0
 
 -- -----------------------------------------------------------------------------
 --     - Quality of Life -
