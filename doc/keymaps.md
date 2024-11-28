@@ -27,6 +27,7 @@ Leader key: `\`
 | `\rg`      | Live grep search                                      |
 | `\fb`      | List buffers                                          |
 | `\ft`      | Find TODOs                                            |
+| `\sf`      | Search Functions across project                       |
 
 ## File Explorer
 

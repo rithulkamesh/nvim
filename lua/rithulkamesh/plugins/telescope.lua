@@ -34,6 +34,12 @@ return {
 		keymap("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
 		keymap("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
 		keymap("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
+		keymap(
+			"n",
+			"<leader>sf",
+			"<cmd>Telescope lsp_workspace_symbols symbols=method<cr>",
+			{ desc = "Search methods across project" }
+		)
 
 		keymap("n", "<leader>fd", "<cmd>Telescope current_buffer_fuzzy_find<cr>", {})
 		keymap("n", "<leader>ht", "<cmd>Telescope help_tags<cr>", {})
