@@ -16,6 +16,30 @@ This configuration has been tested only on unix devices. Please open a PR if tes
 
 `git clone --depth 1 git@github.com:rithulkamesh/nvim.git ~/.config/nvim`
 
+## 🔧 Extending Configuration
+
+The configuration is designed to be easily customizable through a user directory structure. To add your own customizations:
+
+1. Create a new directory structure:
+
+   ```bash
+   mkdir -p ~/.config/nvim/lua/rithulkamesh/user
+   ```
+
+2. Create your configuration file:
+
+   ```bash
+   touch ~/.config/nvim/lua/rithulkamesh/user/init.lua
+   ```
+
+3. Add your custom configurations to `init.lua`. Here are some examples:
+
+   ```lua
+   require("snippets.lua") --  add custom snippets
+   ```
+
+The user configuration will be automatically loaded if it exists, allowing you to extend or override the base configuration without modifying the core files.
+
 ## ⌨️ Keybinds
 
 Please refer to the keybinds documentation @ [./keymaps.md](./keymaps.md)

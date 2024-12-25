@@ -1,2 +1,4 @@
 plugin
 .DS_Store
+lua/rithulkamesh/user/**
+
